@@ -1,0 +1,1 @@
+C:\"Program Files"\"Rhino 7"\System\Rhino.exe /nosplash /runscript="-_RunPythonScript C:\Users\hu9on\Documents\LEModeler\PythonFiles\main.py"
