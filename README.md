@@ -231,7 +231,3 @@ That, however, requires knowledge of the Python language and the basics of Non-u
 #
 ## Contributing
 Pull requests and questions are welcome.
-
-#
-## License
-[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
