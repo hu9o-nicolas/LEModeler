@@ -19,7 +19,7 @@ An installed version of [Rhinoceros3D](https://www.rhino3d.com/en/) (Rhino 6 or 
 The main folder (the MDLRfoil folder) contains the following elements:
 - a folder called "Exports", which contains the exported parts (if any) of modeled foils,
 - a folder called "PythonFiles", which contains the .py files used for modeling a foil,
-- a folder called "Sections", which contains a list of sections (.dat format) to be used for modeling a foil,
+- *Sections.zip*, which contains a list of sections (.dat format) to be used for modeling a foil,
 - *foil_dimensions_scheme.png*, which is a scheme of a typical T-foil its dimensions,
 - *input_parameters.txt*, which contains all the input parameters,
 - *run.bat*, which launches the modeling,
@@ -36,13 +36,19 @@ The "PythonFiles" folder contains the following scripts:
 
 #
 ## Procedure 
+First, unzip *Sections.zip* to get the "Sections" folder within the main folder. It must be named "Sections" such that its directory is "C:\Users\YourUserName\path\to\MDLRfoil\Sections\airfoil_example.dat". It contains a list of foil cross-sections (see [Cross-sections](#cross-sections)).
+
 The procedure for modeling and exporting a foil is the following:
 - 0. Configure *run.bat* (see the dedicated section [Configuration](#configuration)),
 - 1. Define the input parameters (see the dedicated section [Input parameters](#input-parameters)),
 - 2. Launch the modeling tool by double-clicking on *run.bat* (once configurated, see step 0.),
 - 3. The exported parts of the modeled foil are available in the "Exports" folder (see the dedicated section [Export](#export)).
 
-In step 2., *run.bat* launches Rhino and runs *main.py* which, in turns, instantiates a foil whose components are defined by the user in *input_parameters.txt*.
+In step 2., *run.bat* launches Rhino and runs *main.py* which, in turns, instantiates a foil whose components are defined by the user in *input_parameters.txt*. If desired, the user can decide to run *main.py* directly from Rhino by following the procedure below:
+- 2.1. Open Rhino manually,
+- 2.2. Type *RunPythonScript* in the command prompt,
+- 2.3. Fetch *main.py* and open it. 
+
 Once modeled, each part represented by its corresponding polysurface is exported to the format(s) defined by the user in *input_parameters.txt*.
 Finally, Rhino is closed automatically if set up by the user (see the dedicated section [Input parameters](#input-parameters)).
 
