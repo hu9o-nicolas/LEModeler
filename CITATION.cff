@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: LEModeler
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Hugo
+    family-names: Nicolas
+    email: hugo.nicolas@ensta-bretagne.org
+    orcid: 'https://orcid.org/0000-0002-8751-6805'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7591707
+repository-code: 'https://github.com/hu9o-nicolas/LEModeler.git'
+abstract: >-
+  LEModeler is a user-friendly open-source tool for
+  generating and exporting parametric hydrofoil models
+  automatically using the Rhinoceros 3D CAD engine.
+keywords:
+  - hydrofoil
+  - parametric-modeling
+  - cad
+  - rhinoscript
+license: GPL-3.0
+version: v1.0.0-alpha
+date-released: '2023-01-31'
