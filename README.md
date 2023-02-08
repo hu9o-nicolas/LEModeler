@@ -20,10 +20,10 @@ For the time being, the tool only runs on Windows.
 ## Folder contents 
 The main folder (the LEModeler folder) contains the following elements:
 - a folder called "Exports", which contains the exported parts (if any) of modeled foils,
-- a folder called "PythonFiles", which contains the .py files used for modeling a foil,
-- *Sections.zip*, which contains a list of sections (.dat format) to be used for modeling a foil,
-- *foil_dimensions_scheme.png*, which is a scheme of a typical T-foil its dimensions,
-- *input_parameters.txt*, which contains all the input parameters,
+- a folder called "PythonFiles", which contains the *.py* files used for modeling a foil,
+- *Sections.zip*, which contains a list of sections (*.dat* format) to be used for modeling a foil,
+- *foil_dimensions_scheme.png*, which is a scheme of a typical T-foil and its dimensions,
+- *input_parameters.txt*, which contains the input parameters,
 - *run.bat*, which launches the modeling,
 - *LICENSE*, which contains the license,
 - *CITATION.cff*, which contains information for correctly citing this tool,
@@ -179,12 +179,12 @@ In this section are given the names of the cross-section for each foil part.
 Therefore, in the current version of the modeling tool, each part can only be composed of one cross-sectional profile.
 In this example, the mast cross-section is a naca 4-digit profile (namely NACA 0008) whilst that of the front wing is a user-defined h105 profile.
 Profiles whose name is indicated here in *foil.dimensions.txt* must be in the "Sections" folder. 
-Consequently, any profile can be added by the user in the aforementioned folder as a .dat file following the format:
+Consequently, any profile can be added by the user in the aforementioned folder as a *.dat* file following the format:
 ```
 <name>
 <longitudinal coordinates> <vertical coordinates>
 ```
-LEModeler is able to model either sharp or blunt trailing edges. A sharp trailing edge is modeled if the airfoil is closed in its corresponding .dat file. On the other hand, a part is modeled with a blunt trailing edge if its cross-section is left opened in the corresponding .dat file.
+LEModeler is able to model either sharp or blunt trailing edges. A sharp trailing edge is modeled if the airfoil is closed in its corresponding .dat file. On the other hand, a part is modeled with a blunt trailing edge if its cross-section is left opened in the corresponding *.dat* file.
 
 For example, the following airfoil would be modeled with a sharp trailing edge:
 ```
